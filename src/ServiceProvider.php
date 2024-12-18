@@ -1,6 +1,6 @@
 <?php
 
-namespace J\Components;
+namespace Johngna\JEditor;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use Livewire\Livewire;

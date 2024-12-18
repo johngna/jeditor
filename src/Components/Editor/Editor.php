@@ -1,6 +1,6 @@
 <?php
 
-namespace J\Components\Editor;
+namespace Johngna\JEditor\Components\Editor;
 
 use Livewire\Component;
 
