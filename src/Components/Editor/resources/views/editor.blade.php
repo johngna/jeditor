@@ -1,5 +1,6 @@
+@props(['on'])
 <div
-    {{ $attributes->class(['w-full']) }}
+    {{ $attributes->merge(['class' => 'w-full']) }}
     wire:ignore
     x-data="editor(@entangle('content'))"
     x-init="initQuill"
