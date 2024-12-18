@@ -1,0 +1,31 @@
+{
+    "name": "johngna/jeditor",
+    "description": "Rich Text Editor for Laravel Livewire",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Johngna\\JEditor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "John Araujo",
+            "email": "johngna@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "livewire/livewire": "^3.0",
+        "illuminate/support": "^10.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Johngna\\JEditor\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
