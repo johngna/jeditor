@@ -22,4 +22,9 @@ class ServiceProvider extends BaseServiceProvider
 
         Livewire::component('j-editor', Editor::class);
     }
+
+    public function register()
+    {
+        $this->mergeConfigFrom(__DIR__.'/config/j-components.php', 'j-components');
+    }
 }
