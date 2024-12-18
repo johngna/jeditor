@@ -11,8 +11,7 @@ class ServiceProvider extends BaseServiceProvider
     public function boot()
     {
 
-        // Registrar como componente Livewire
-        Livewire::component('j-editor', Editor::class);
+        
 
         $this->loadViewsFrom(__DIR__ . '/Components/Editor/resources/views', 'editor');
         
