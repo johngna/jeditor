@@ -1,6 +1,6 @@
 # JEditor
 
-Editor de texto rico (WYSIWYG) para Laravel Livewire usando Quill.
+Editor de texto (WYSIWYG) para Laravel Livewire usando Quill.
 
 ## Requisitos
 
@@ -18,34 +18,34 @@ composer require johngna/jeditor
 
 ## Publicar Assets (Opcional)
 ```bash
-php artisan vendor:publish --tag="j-components-assets"
+php artisan vendor:publish --tag="j-editor-assets"
 
-php artisan vendor:publish --tag="j-components-config"
+php artisan vendor:publish --tag="j-editor-config"
 
 ```
 
 ## Uso Básico
 
 ```bash
-<j-editor 
-    wire:model="content" 
+    <livewire:j-editor
+    wire:model="content"
     placeholder="Digite seu texto aqui..."
-/>
+    />
 ```
 
 ## Exemplos
 
 ```bash
-<j-editor wire:model="content" />
+<livewire:j-editor wire:model="content" />
 
 
-<j-editor 
+<livewire:j-editor
     wire:model="content"
     placeholder="Escreva sua história..."
 />
 
 
-<j-editor 
+<livewire:j-editor 
     wire:model="content"
     :readonly="true"
 />
