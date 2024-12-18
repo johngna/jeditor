@@ -3,12 +3,15 @@
 namespace Johngna\JEditor\Components\Editor;
 
 use Livewire\Component;
+use Livewire\Attributes\Modelable;
 
 class Editor extends Component
 {
+    #[Modelable]
     public string $content = '';
-    public string $placeholder = '';
-    public bool $readonly = false;
+    
+    public string $placeholder;
+    public bool $readonly;
     public string $id;
 
     public function mount(

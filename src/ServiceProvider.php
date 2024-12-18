@@ -22,6 +22,7 @@ class ServiceProvider extends BaseServiceProvider
             __DIR__ . '/Components/Editor/resources/views' => resource_path('views/vendor/j-editor'),
         ], 'j-editor-assets');
 
+        // Registrando o componente Livewire
         Livewire::component('j-editor', Editor::class);
     }
 

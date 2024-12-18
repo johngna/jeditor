@@ -1,10 +1,14 @@
 <div
+    {{ $attributes->class(['w-full']) }}
     wire:ignore
     x-data="editor(@entangle('content'))"
     x-init="initQuill"
-    {{ $attributes->merge(['class' => 'w-full']) }}
 >
-    <div x-ref="editor" id="{{ $id }}" class="bg-white"></div>
+    <div 
+        x-ref="editor" 
+        id="{{ $id }}" 
+        class="bg-white border border-gray-300 rounded-lg shadow-sm"
+    ></div>
 </div>
 
 @pushOnce('styles')
