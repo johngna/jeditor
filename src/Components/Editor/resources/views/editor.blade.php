@@ -8,8 +8,9 @@
     <div 
         x-ref="editor" 
         id="{{ $id }}" 
-        class="bg-white border border-gray-300 rounded-lg shadow-sm"
-    ></div>
+        class="bg-white border border-gray-300  shadow-sm dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300"
+        style="min-height: 200px"
+        ></div>
 </div>
 
 @pushOnce('styles')
