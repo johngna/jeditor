@@ -10,7 +10,8 @@ class ServiceProvider extends BaseServiceProvider
 {
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/Components/Editor/resources/views', 'editor');
+        // Corrigindo o namespace das views
+        $this->loadViewsFrom(__DIR__ . '/Components/Editor/resources/views', 'j-editor');
         
         $this->publishes([
             __DIR__.'/config/j-editor.php' => config_path('j-editor.php'),
@@ -18,6 +19,7 @@ class ServiceProvider extends BaseServiceProvider
 
         $this->publishes([
             __DIR__ . '/Components/Editor/resources/js' => public_path('vendor/j-editor'),
+            __DIR__ . '/Components/Editor/resources/views' => resource_path('views/vendor/j-editor'),
         ], 'j-editor-assets');
 
         Livewire::component('j-editor', Editor::class);

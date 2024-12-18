@@ -29,6 +29,6 @@ class Editor extends Component
 
     public function render()
     {
-        return view('j-components::editor');
+        return view('j-editor::editor');
     }
 }
