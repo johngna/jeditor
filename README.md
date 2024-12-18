@@ -16,11 +16,11 @@ Editor de texto (WYSIWYG) para Laravel Livewire usando Quill.
 composer require johngna/jeditor
 ```
 
-## Publicar Assets (Opcional)
+## Republicar Assets (Opcional)
 ```bash
-php artisan vendor:publish --tag="j-editor-assets"
+php artisan vendor:publish --tag="j-editor-assets" --force
 
-php artisan vendor:publish --tag="j-editor-config"
+php artisan vendor:publish --tag="j-editor-config" --force
 
 ```
 
